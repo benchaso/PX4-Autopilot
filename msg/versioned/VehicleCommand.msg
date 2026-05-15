@@ -78,7 +78,7 @@ uint16 VEHICLE_CMD_DO_SET_STANDARD_MODE=262 # Enable the specified standard MAVL
 uint16 VEHICLE_CMD_GIMBAL_DEVICE_INFORMATION = 283 # Command to ask information about a low level gimbal.
 
 uint16 VEHICLE_CMD_MISSION_START = 300 # Start running a mission. |first_item: the first mission item to run|last_item: the last mission item to run (after this item is run, the mission ends)|
-uint16 VEHICLE_CMD_ACTUATOR_GROUP_TEST = 309 # Test groups of related actuators (e.g. all actuators contributing to roll torque). |group (ACTUATOR_TEST_GROUP_*)|value [-1, 1]|Unused|Unused|Unused|Unused|Unused|
+uint16 VEHICLE_CMD_ACTUATOR_GROUP_TEST = 309 # Test groups of related actuators (e.g. all actuators contributing to roll torque). |[@enum ACTUATOR_TEST_GROUP] Group|[@range -1,1] Value|Unused|Unused|Unused|Unused|Unused|
 uint16 VEHICLE_CMD_ACTUATOR_TEST = 310 # Actuator testing command. |[@range -1,1] value|[s] timeout|Unused|Unused|output function|
 uint16 VEHICLE_CMD_CONFIGURE_ACTUATOR = 311 # Actuator configuration command. |configuration|Unused|Unused|Unused|output function|
 uint16 VEHICLE_CMD_ESC_REQUEST_EEPROM = 312 # Request EEPROM data from an ESC. |ESC Index|Firmware Type|Unused|Unused|Unused|
